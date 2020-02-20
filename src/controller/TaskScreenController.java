@@ -1,25 +1,23 @@
 package controller;
 
 import Taskr.Main;
-import com.sun.corba.se.impl.orbutil.graph.Graph;
 import javafx.beans.property.ReadOnlyStringWrapper;
-import javafx.beans.value.ObservableStringValue;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
-import javafx.collections.ObservableArray;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
-import javafx.scene.input.MouseEvent;
+import javafx.scene.control.cell.TextFieldListCell;
+import javafx.scene.layout.AnchorPane;
+import javafx.util.Callback;
+import javafx.util.StringConverter;
 import model.Task;
 import utilities.Database;
 
-import javax.xml.crypto.Data;
 import java.net.URL;
 import java.sql.ResultSet;
-import java.util.ArrayList;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
@@ -27,6 +25,9 @@ import static utilities.Database.submitQuery;
 
 
 public class TaskScreenController implements Initializable {
+    @FXML
+    private AnchorPane root;
+
     @FXML
     private Label lblTitle;
 
@@ -37,11 +38,7 @@ public class TaskScreenController implements Initializable {
     private TableView<Task> tblTasks;
 
     @FXML
-    private TableColumn<Task, String> colTaskName;
-
-    @FXML
     private TableColumn<Task, String> colTaskDescription;
-
 
     @FXML
     void AddTask(ActionEvent event) {
@@ -92,26 +89,20 @@ public class TaskScreenController implements Initializable {
     private void callDatabase() {
         ObservableList<Task> taskList = FXCollections.observableArrayList();
 
-        colTaskName.setCellValueFactory(cellData -> {
-            return cellData.getValue().getTask_name();
-        });
-
         colTaskDescription.setCellValueFactory(cellData -> {
             return cellData.getValue().getTask_description();
         });
-
 
         ResultSet result = Database.selectTasksQuery();
         try {
             while (result.next()) {
                 String task_id = result.getString("task_id");
-                String task_name = result.getString("task_name");
                 String task_description = result.getString("task_description");
 
                 Task task = new Task(new ReadOnlyStringWrapper(task_id),
-                        new ReadOnlyStringWrapper(task_name),
                         new ReadOnlyStringWrapper(task_description));
                 taskList.add(task);
+
             }
             tblTasks.setItems(taskList);
         } catch (Exception e) {

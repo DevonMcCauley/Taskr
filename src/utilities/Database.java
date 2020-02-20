@@ -15,7 +15,6 @@ public class Database {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        System.out.println("Database successfully connected");
     }
 
     public static void closeConnection() {
@@ -24,8 +23,6 @@ public class Database {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        System.out.println("Database successfully closed");
-
     }
 
     public static void createTasksTable() {
@@ -34,16 +31,14 @@ public class Database {
         try {
             Class.forName("org.sqlite.JDBC");
             conn = DriverManager.getConnection("jdbc:sqlite:SqliteDB.db");
-            System.out.println("Database Opened...\n");
             stmt = conn.createStatement();
-            String sql = "CREATE TABLE Tasks " + "(task_id INTEGER PRIMARY KEY AUTOINCREMENT," + " task_name TEXT NOT NULL, " + " task_description TEXT NOT NULL) ";
+            String sql = "CREATE TABLE Tasks " + "(task_id INTEGER PRIMARY KEY AUTOINCREMENT, " + " task_description TEXT NOT NULL) ";
             stmt.executeUpdate(sql);
             stmt.close();
             conn.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
-        System.out.println("Table Product Created Successfully!");
     }
 
     public static ResultSet selectTasksQuery() {

@@ -34,9 +34,8 @@ public class AddTaskController {
 
     @FXML
     void SubmitTask(ActionEvent event) {
-        String taskName = txtTaskName.getText();
         String taskDescription = txtTaskDescription.getText();
-        String sqlStatement = "INSERT INTO Tasks (task_name, task_description) values ('" + taskName + "', '" + taskDescription + "');";
+        String sqlStatement = "INSERT INTO Tasks (task_description) values ('" + taskDescription +"');";
         submitQuery(sqlStatement);
 
         Taskr.Main.changeScene(screen, title);

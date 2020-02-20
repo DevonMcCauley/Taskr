@@ -1,0 +1,12 @@
+@font-face
+{
+    src: url("Comfortaa-Regular.ttf");
+}
+
+* {
+    -fx-font-family: Comfortaa Regular;
+}
+
+.button {
+    -fx-font-size: 15px;
+}
