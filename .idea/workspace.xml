@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Taskr:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d96a0ceb-8531-4079-9e54-11b31824c4a6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/SqliteDB.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Taskr/controller/TaskScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Taskr/controller/TaskScreenController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Taskr/utilities/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Taskr/utilities/Database.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/TaskScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/TaskScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/Database.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="CSS File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1Y0PJ6GnMPEZWrYm5Yw6KIQWCvf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="sqlite" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../The-Planeswalker-Guide-to-the-Gathering" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\devmc\Documents\GitHub\Tasker\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\devmc\Documents\GitLab\taskr\resources\sounds" />
+      <recent name="C:\Users\devmc\Documents\GitLab\Taskr\resources" />
+      <recent name="C:\Users\devmc\Documents\GitLab\Taskr\src" />
+      <recent name="C:\Users\devmc\Documents\GitLab\Taskr\resources\css" />
+      <recent name="C:\Users\devmc\Documents\GitLab\Taskr\resources\fonts" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Taskr.Main" />
+      <module name="Taskr" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Taskr.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/Taskr_jar/Taskr.jar" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JAR Application.Taskr.jar" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:SqliteDB" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:SqliteDB" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@4f4cacb8" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d96a0ceb-8531-4079-9e54-11b31824c4a6" name="Default Changelist" comment="" />
+      <created>1582076463035</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582076463035</updated>
+      <workItem from="1582076465494" duration="2013000" />
+      <workItem from="1582080424147" duration="3164000" />
+      <workItem from="1582137730641" duration="415000" />
+      <workItem from="1582138181250" duration="9584000" />
+      <workItem from="1582153884067" duration="94000" />
+      <workItem from="1582156299842" duration="3744000" />
+      <workItem from="1582163379251" duration="4098000" />
+      <workItem from="1582174432670" duration="4996000" />
+      <workItem from="1582230962295" duration="2664000" />
+      <workItem from="1582245279468" duration="455000" />
+      <workItem from="1582249703896" duration="2858000" />
+      <workItem from="1582253406154" duration="1881000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="78" y="179" key="#Project_Structure" timestamp="1582076531554">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="78" y="179" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1582076531554" />
+    <state x="0" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582077025736">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582077025736" />
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1582250161231">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582250161231" />
+    <state x="275" y="305" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1582156419158">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="275" y="305" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582156419158" />
+    <state x="300" y="275" key="FileChooserDialogImpl" timestamp="1582166778375">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="300" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582166778375" />
+    <state width="1877" height="269" key="GridCell.Tab.0.bottom" timestamp="1582255294880">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="269" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582255294880" />
+    <state width="1877" height="269" key="GridCell.Tab.0.center" timestamp="1582255294880">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="269" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582255294880" />
+    <state width="1877" height="269" key="GridCell.Tab.0.left" timestamp="1582255294880">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="269" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582255294880" />
+    <state width="1877" height="269" key="GridCell.Tab.0.right" timestamp="1582255294880">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="269" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582255294880" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1582251708238">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582251708238" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1582251708238">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582251708238" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1582251708238">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582251708238" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1582251708238">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582251708238" />
+    <state x="0" y="95" key="SettingsEditor" timestamp="1582156424876">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="95" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582156424876" />
+    <state x="859" y="411" width="326" height="234" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1582077340707">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="859" y="411" width="326" height="234" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1040@0.0.1920.1040" timestamp="1582077340707" />
+    <state x="487" y="226" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1582140336596">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="487" y="226" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1582140336596" />
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1582253406764">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582253406764" />
+    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582251004152">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582251004152" />
+    <state x="0" y="141" key="new project wizard" timestamp="1582137990361">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="141" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1582137990361" />
+  </component>
+</project>
