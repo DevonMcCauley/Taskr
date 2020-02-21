@@ -16,6 +16,7 @@ import model.Task;
 import utilities.Database;
 import java.net.URL;
 import java.sql.ResultSet;
+import java.util.Date;
 import java.util.Optional;
 import java.util.ResourceBundle;
 import static utilities.Database.submitQuery;
@@ -38,6 +39,9 @@ public class TaskScreenController implements Initializable {
 
     @FXML
     private TableColumn<Task, String> colTaskDescription;
+
+    @FXML
+    private TableColumn<Task, String> colDueDate;
     //</editor-fold>
 
     //<editor-fold desc="Sounds">
@@ -112,17 +116,24 @@ public class TaskScreenController implements Initializable {
         colTaskDescription.setCellValueFactory(cellData -> {
             return cellData.getValue().getTask_description();
         });
+        colDueDate.setCellValueFactory(cellData -> {
+            return cellData.getValue().getTask_date();
+        });
 
         ResultSet result = Database.selectTasksQuery();
         try {
             while (result.next()) {
                 String task_id = result.getString("task_id");
                 String task_description = result.getString("task_description");
-
+                String task_date = result.getString("task_date");
+                if(task_date.equals("null"))
+                {
+                    task_date = "n/a";
+                }
                 Task task = new Task(new ReadOnlyStringWrapper(task_id),
-                        new ReadOnlyStringWrapper(task_description));
+                        new ReadOnlyStringWrapper(task_description),
+                        new ReadOnlyStringWrapper(task_date));
                 taskList.add(task);
-
             }
             tblTasks.setItems(taskList);
         } catch (Exception e) {

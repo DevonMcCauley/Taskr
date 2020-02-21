@@ -18,7 +18,8 @@
       <Button fx:id="btnDeleteTask" layoutX="245.0" layoutY="73.0" mnemonicParsing="false" onAction="#DeleteTask" onMouseClicked="#AddTask" text="Delete Task" />
       <TableView fx:id="tblTasks" layoutX="21.0" layoutY="121.0" prefHeight="262.0" prefWidth="335.0">
         <columns>
-          <TableColumn fx:id="colTaskDescription" prefWidth="334.0" text="Task Description" />
+          <TableColumn fx:id="colTaskDescription" prefWidth="262.0" text="Task Description" />
+            <TableColumn fx:id="colDueDate" prefWidth="72.0" text="Due Date" />
         </columns>
       </TableView>
    </children>

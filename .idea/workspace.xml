@@ -7,18 +7,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d96a0ceb-8531-4079-9e54-11b31824c4a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/sounds/back.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sounds/deleted.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sounds/taskAdded.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/57e1eccf-1b2b-4da4-a5d9-0875722ed0dd.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SqliteDB.db" beforeDir="false" afterPath="$PROJECT_DIR$/SqliteDB.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SqliteDB.db" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Taskr/controller/AddTaskController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Taskr/controller/AddTaskController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Taskr/controller/TaskScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Taskr/controller/TaskScreenController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Taskr/model/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Taskr/model/Task.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Taskr/utilities/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Taskr/utilities/Database.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Taskr/view/add_task.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Taskr/view/add_task.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Taskr/view/task_screen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Taskr/view/task_screen.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/AddTaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AddTaskController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/TaskScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/TaskScreenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/font.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/font.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/add_task.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/add_task.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/task_screen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/task_screen.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,17 +40,7 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="SqliteDB" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="SqliteDB" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -134,7 +127,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:SqliteDB" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@4a973782" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@4f4cacb8" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -163,6 +156,8 @@
       <workItem from="1582174432670" duration="4996000" />
       <workItem from="1582230962295" duration="2664000" />
       <workItem from="1582245279468" duration="455000" />
+      <workItem from="1582249703896" duration="2858000" />
+      <workItem from="1582253406154" duration="382000" />
     </task>
     <servers />
   </component>
@@ -181,10 +176,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582077025736" />
-    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1582231739243">
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1582250161231">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582231739243" />
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582250161231" />
     <state x="275" y="305" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1582156419158">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -193,22 +188,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="300" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582166778375" />
-    <state width="914" height="271" key="GridCell.Tab.0.bottom" timestamp="1582245735866">
+    <state width="1869" height="269" key="GridCell.Tab.0.bottom" timestamp="1582253779249">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="271" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582245735866" />
-    <state width="914" height="271" key="GridCell.Tab.0.center" timestamp="1582245735866">
+    <state width="1869" height="269" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582253779249" />
+    <state width="1869" height="269" key="GridCell.Tab.0.center" timestamp="1582253779249">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="271" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582245735866" />
-    <state width="914" height="271" key="GridCell.Tab.0.left" timestamp="1582245735866">
+    <state width="1869" height="269" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582253779249" />
+    <state width="1869" height="269" key="GridCell.Tab.0.left" timestamp="1582253779249">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="271" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582245735866" />
-    <state width="914" height="271" key="GridCell.Tab.0.right" timestamp="1582245735866">
+    <state width="1869" height="269" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582253779249" />
+    <state width="1869" height="269" key="GridCell.Tab.0.right" timestamp="1582253779249">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="271" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582245735866" />
+    <state width="1869" height="269" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582253779249" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1582251708238">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582251708238" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1582251708238">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582251708238" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1582251708238">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582251708238" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1582251708238">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582251708238" />
     <state x="0" y="95" key="SettingsEditor" timestamp="1582156424876">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -221,14 +232,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="487" y="226" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1582140336596" />
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1582230961509">
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1582253406764">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582230961509" />
-    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582243200378">
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582253406764" />
+    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582251004152">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582243200378" />
+    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582251004152" />
     <state x="0" y="141" key="new project wizard" timestamp="1582137990361">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

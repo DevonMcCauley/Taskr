@@ -32,7 +32,7 @@ public class Database {
             Class.forName("org.sqlite.JDBC");
             conn = DriverManager.getConnection("jdbc:sqlite:SqliteDB.db");
             stmt = conn.createStatement();
-            String sql = "CREATE TABLE Tasks " + "(task_id INTEGER PRIMARY KEY AUTOINCREMENT, " + " task_description TEXT NOT NULL) ";
+            String sql = "CREATE TABLE Tasks " + "(task_id INTEGER PRIMARY KEY AUTOINCREMENT,  task_description TEXT NOT NULL,  task_date DATE)";
             stmt.executeUpdate(sql);
             stmt.close();
             conn.close();
