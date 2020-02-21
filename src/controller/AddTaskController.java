@@ -3,10 +3,7 @@ package controller;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.DateCell;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.util.Callback;
@@ -59,14 +56,27 @@ public class AddTaskController implements Initializable {
         String sqlStatement;
         String taskDescription;
 
-        taskDescription = txtTaskDescription.getText();
-        LocalDate taskDate = calTaskDate.getValue();
-        sqlStatement = "INSERT INTO Tasks (task_description, task_date) values ('" + taskDescription + "', '" + taskDate + "');";
-        submitQuery(sqlStatement);
-        taskAdded.seek(Duration.ZERO);
-        taskAdded.play();
-        Taskr.Main.changeScene(screen, title);
+        if (checkTaskDescription())
+        {
+            taskDescription = txtTaskDescription.getText();
+            LocalDate taskDate = calTaskDate.getValue();
+            sqlStatement = "INSERT INTO Tasks (task_description, task_date) values ('" + taskDescription + "', '" + taskDate + "');";
+            submitQuery(sqlStatement);
+            taskAdded.seek(Duration.ZERO);
+            taskAdded.play();
+            Taskr.Main.changeScene(screen, title);
+        }
+    }
 
+    boolean checkTaskDescription(){
+        boolean isOccupied = true;
+        if(txtTaskDescription.getText().isEmpty())
+        {
+        Alert alert = new Alert(Alert.AlertType.ERROR, "You need to enter a Task description!");
+        alert.showAndWait();
+        isOccupied = false;
+        }
+        return isOccupied;
     }
 
     @Override

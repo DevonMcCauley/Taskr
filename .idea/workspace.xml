@@ -7,13 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d96a0ceb-8531-4079-9e54-11b31824c4a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/images/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SqliteDB.db" beforeDir="false" afterPath="$PROJECT_DIR$/SqliteDB.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/logo_icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Taskr/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Taskr/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/AddTaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AddTaskController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/add_task.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/add_task.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +85,8 @@
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Taskr.Main" />
       <module name="Taskr" />
       <method v="2">
@@ -99,6 +97,10 @@
       <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/Taskr_jar/Taskr.jar" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JAR Application.Taskr.jar" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JAR Application.Taskr.jar" />
@@ -152,6 +154,8 @@
       <workItem from="1582256238560" duration="121000" />
       <workItem from="1582261352760" duration="2596000" />
       <workItem from="1582265515441" duration="83000" />
+      <workItem from="1582308536029" duration="846000" />
+      <workItem from="1582310277050" duration="1747000" />
     </task>
     <servers />
   </component>
@@ -170,38 +174,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="179" key="#SQL_Resolution_Scopes/0.0.1920.1040@0.0.1920.1040" timestamp="1582262524509" />
-    <state x="0" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582077025736">
+    <state x="725" y="128" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582312743628">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="0" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582077025736" />
+    <state x="725" y="128" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582312743628" />
     <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1582250161231">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582250161231" />
-    <state x="275" y="305" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1582156419158">
+    <state x="275" y="305" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1582311795213">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="275" y="305" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582156419158" />
+    <state x="275" y="305" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582311795213" />
     <state x="300" y="275" key="FileChooserDialogImpl" timestamp="1582166778375">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="300" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582166778375" />
-    <state width="1133" height="265" key="GridCell.Tab.0.bottom" timestamp="1582265598190">
+    <state width="1133" height="262" key="GridCell.Tab.0.bottom" timestamp="1582309389592">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1133" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582265598190" />
-    <state width="1133" height="265" key="GridCell.Tab.0.center" timestamp="1582265598190">
+    <state width="1133" height="262" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582309389592" />
+    <state width="1133" height="262" key="GridCell.Tab.0.center" timestamp="1582309389592">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1133" height="265" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582265598190" />
-    <state width="1133" height="265" key="GridCell.Tab.0.left" timestamp="1582265598190">
+    <state width="1133" height="262" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582309389592" />
+    <state width="1133" height="262" key="GridCell.Tab.0.left" timestamp="1582309389592">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1133" height="265" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582265598190" />
-    <state width="1133" height="265" key="GridCell.Tab.0.right" timestamp="1582265598190">
+    <state width="1133" height="262" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582309389592" />
+    <state width="1133" height="262" key="GridCell.Tab.0.right" timestamp="1582309389592">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1133" height="265" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582265598190" />
+    <state width="1133" height="262" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582309389592" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1582251708238">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -218,10 +222,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582251708238" />
-    <state x="0" y="95" key="SettingsEditor" timestamp="1582156424876">
+    <state x="733" y="93" key="SettingsEditor" timestamp="1582311820404">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="0" y="95" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582156424876" />
+    <state x="733" y="93" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582311820404" />
+    <state x="1057" y="387" key="classpath-attribute-editor" timestamp="1582311809181">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1057" y="387" key="classpath-attribute-editor/0.0.1920.1040@0.0.1920.1040" timestamp="1582311809181" />
     <state x="859" y="411" width="326" height="234" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1582077340707">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -234,10 +242,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="487" y="226" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1582140336596" />
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1582308544333">
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1582310276827">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582308544333" />
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582310276827" />
     <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582251004152">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
