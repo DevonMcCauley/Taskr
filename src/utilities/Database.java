@@ -2,6 +2,8 @@ package utilities;
 
 import javax.xml.transform.Result;
 import java.sql.*;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class Database {
 
@@ -48,6 +50,19 @@ public class Database {
         try {
             stmt = conn.createStatement();
             result = stmt.executeQuery("SELECT * FROM Tasks");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
+    public static ResultSet checkDates() {
+        Statement stmt;
+        ResultSet result = null;
+        LocalDate now = LocalDate.now();
+        try {
+            stmt = conn.createStatement();
+            result = stmt.executeQuery("SELECT * FROM Tasks where task_date <= '" + now +"';");
         } catch (SQLException e) {
             e.printStackTrace();
         }

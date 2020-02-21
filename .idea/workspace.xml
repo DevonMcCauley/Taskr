@@ -7,22 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d96a0ceb-8531-4079-9e54-11b31824c4a6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SqliteDB.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SqliteDB.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Taskr/controller/AddTaskController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Taskr/controller/AddTaskController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Taskr/controller/TaskScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Taskr/controller/TaskScreenController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Taskr/model/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Taskr/model/Task.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Taskr/utilities/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Taskr/utilities/Database.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Taskr/view/add_task.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Taskr/view/add_task.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Taskr/view/task_screen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Taskr/view/task_screen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/AddTaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AddTaskController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/TaskScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/TaskScreenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Task.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utilities/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/add_task.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/add_task.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/task_screen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/task_screen.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +147,7 @@
       <workItem from="1582230962295" duration="2664000" />
       <workItem from="1582245279468" duration="455000" />
       <workItem from="1582249703896" duration="2858000" />
-      <workItem from="1582253406154" duration="382000" />
+      <workItem from="1582253406154" duration="1881000" />
     </task>
     <servers />
   </component>
@@ -188,22 +178,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="300" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582166778375" />
-    <state width="1869" height="269" key="GridCell.Tab.0.bottom" timestamp="1582253779249">
+    <state width="1877" height="269" key="GridCell.Tab.0.bottom" timestamp="1582255294880">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1869" height="269" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582253779249" />
-    <state width="1869" height="269" key="GridCell.Tab.0.center" timestamp="1582253779249">
+    <state width="1877" height="269" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582255294880" />
+    <state width="1877" height="269" key="GridCell.Tab.0.center" timestamp="1582255294880">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1869" height="269" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582253779249" />
-    <state width="1869" height="269" key="GridCell.Tab.0.left" timestamp="1582253779249">
+    <state width="1877" height="269" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582255294880" />
+    <state width="1877" height="269" key="GridCell.Tab.0.left" timestamp="1582255294880">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1869" height="269" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582253779249" />
-    <state width="1869" height="269" key="GridCell.Tab.0.right" timestamp="1582253779249">
+    <state width="1877" height="269" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582255294880" />
+    <state width="1877" height="269" key="GridCell.Tab.0.right" timestamp="1582255294880">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1869" height="269" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582253779249" />
+    <state width="1877" height="269" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582255294880" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1582251708238">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -14,11 +14,14 @@ import javafx.scene.media.MediaPlayer;
 import javafx.util.Duration;
 import model.Task;
 import utilities.Database;
+
 import java.net.URL;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.Date;
 import java.util.Optional;
 import java.util.ResourceBundle;
+
 import static utilities.Database.submitQuery;
 
 
@@ -126,8 +129,7 @@ public class TaskScreenController implements Initializable {
                 String task_id = result.getString("task_id");
                 String task_description = result.getString("task_description");
                 String task_date = result.getString("task_date");
-                if(task_date.equals("null"))
-                {
+                if (task_date.equals("null")) {
                     task_date = "n/a";
                 }
                 Task task = new Task(new ReadOnlyStringWrapper(task_id),
@@ -145,5 +147,15 @@ public class TaskScreenController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         callDatabase();
+        ResultSet result = Database.checkDates();
+
+        try {
+            if (result.next()) {
+                Alert alert = new Alert(Alert.AlertType.WARNING, "You have a task date that has passed!");
+                alert.showAndWait();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
