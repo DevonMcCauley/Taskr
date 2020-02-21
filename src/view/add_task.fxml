@@ -17,7 +17,7 @@
       </Label>
       <TextField fx:id="txtTaskDescription" layoutX="165.0" layoutY="113.0" prefHeight="30.0" prefWidth="246.0" promptText="Task Description">
          <font>
-            <Font size="14.0" />
+            <Font size="15.0" />
          </font>
       </TextField>
       <Button fx:id="btnSubmit" layoutX="40.0" layoutY="240.0" mnemonicParsing="false" onAction="#SubmitTask" prefHeight="25.0" prefWidth="90.0" text="Submit" />

@@ -14,16 +14,11 @@ import javafx.scene.media.MediaPlayer;
 import javafx.util.Duration;
 import model.Task;
 import utilities.Database;
-
 import java.net.URL;
 import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.Date;
 import java.util.Optional;
 import java.util.ResourceBundle;
-
 import static utilities.Database.submitQuery;
-
 
 public class TaskScreenController implements Initializable {
 
@@ -51,14 +46,17 @@ public class TaskScreenController implements Initializable {
     String clickSound = getClass().getResource("/sounds/click.mp3").toExternalForm();
     String deleteSound = getClass().getResource("/sounds/deleted.mp3").toExternalForm();
 
+
+    //Creates MediaPlayer for the buttonClicked sound (Add button)
     Media click = new Media(clickSound);
     MediaPlayer buttonClicked = new MediaPlayer(click);
 
+    //Creates MediaPlayer for the deleteClicked sound (Delete button)
     Media delete = new Media(deleteSound);
     MediaPlayer deleteClicked = new MediaPlayer(delete);
     //</editor-fold>
 
-
+    //Brings user to the AddTask screen
     @FXML
     void AddTask(ActionEvent event) {
         try {
@@ -74,6 +72,7 @@ public class TaskScreenController implements Initializable {
         }
     }
 
+    //Deletes the selected Task
     @FXML
     void DeleteTask(ActionEvent event) {
         String sqlStatement;
@@ -107,21 +106,16 @@ public class TaskScreenController implements Initializable {
                 } catch (Exception e) {
                     System.out.println("Error: " + e.getMessage());
                 }
-            } else {
             }
         }
     }
 
-
     private void callDatabase() {
+        //ObservableList to hold the ResultSet of the database query
         ObservableList<Task> taskList = FXCollections.observableArrayList();
 
-        colTaskDescription.setCellValueFactory(cellData -> {
-            return cellData.getValue().getTask_description();
-        });
-        colDueDate.setCellValueFactory(cellData -> {
-            return cellData.getValue().getTask_date();
-        });
+        colTaskDescription.setCellValueFactory(cellData -> cellData.getValue().getTask_description());
+        colDueDate.setCellValueFactory(cellData -> cellData.getValue().getTask_date());
 
         ResultSet result = Database.selectTasksQuery();
         try {
@@ -146,9 +140,11 @@ public class TaskScreenController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        //Calls the database to refresh the table
         callDatabase();
         ResultSet result = Database.checkDates();
 
+        //Checks the database to see if a Task date has passed and alerts the user if necessary
         try {
             if (result.next()) {
                 Alert alert = new Alert(Alert.AlertType.WARNING, "You have a task date that has passed!");

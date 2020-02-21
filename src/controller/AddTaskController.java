@@ -1,6 +1,5 @@
 package controller;
 
-import com.sun.org.apache.xml.internal.security.Init;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
@@ -10,27 +9,16 @@ import javafx.scene.control.*;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.util.Duration;
-
 import java.net.URL;
 import java.time.LocalDate;
 import java.util.ResourceBundle;
-
 import static utilities.Database.submitQuery;
 
 public class AddTaskController implements Initializable {
 
     //<editor-fold desc="FXML Declarations">
     @FXML
-    private TextField txtTaskName;
-
-    @FXML
     private TextField txtTaskDescription;
-
-    @FXML
-    private Button btnSubmit;
-
-    @FXML
-    private Button btnCancel;
 
     @FXML
     private DatePicker calTaskDate;
@@ -54,6 +42,7 @@ public class AddTaskController implements Initializable {
     String title = "Taskr";
 
 
+    //Returns user to the main screen (Task Screen)
     @FXML
     void Cancel(ActionEvent event) {
         backClicked.seek(Duration.ZERO);
@@ -61,6 +50,7 @@ public class AddTaskController implements Initializable {
         Taskr.Main.changeScene(screen, title);
     }
 
+    //Submits Task entered by user to the SQLite database
     @FXML
     void SubmitTask(ActionEvent event) {
         String sqlStatement;
@@ -76,27 +66,15 @@ public class AddTaskController implements Initializable {
 
     }
 
-    private boolean checkDescription() {
-
-        boolean bool = true;
-        if (txtTaskDescription.getText().isEmpty()) {
-            Alert alert = new Alert(Alert.AlertType.ERROR, "You must add a task description");
-            alert.showAndWait();
-            bool = false;
-        }
-        return bool;
-    }
-
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        chkNoEndDate.selectedProperty().addListener(new ChangeListener<Boolean>() {
-            @Override
-            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
-                if (chkNoEndDate.isSelected()) {
-                    calTaskDate.setDisable(true);
-                } else {
-                    calTaskDate.setDisable(false);
-                }
+
+        //Creates a listener on the chkNoEndDate checkbox & disables the calendar widget if checked
+        chkNoEndDate.selectedProperty().addListener((observable, oldValue, newValue) -> {
+            if (chkNoEndDate.isSelected()) {
+                calTaskDate.setDisable(true);
+            } else {
+                calTaskDate.setDisable(false);
             }
         });
     }

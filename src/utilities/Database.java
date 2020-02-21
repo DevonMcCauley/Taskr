@@ -1,9 +1,7 @@
 package utilities;
 
-import javax.xml.transform.Result;
 import java.sql.*;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 public class Database {
 
@@ -28,8 +26,8 @@ public class Database {
     }
 
     public static void createTasksTable() {
-        Connection conn = null;
-        Statement stmt = null;
+        Connection conn;
+        Statement stmt;
         try {
             Class.forName("org.sqlite.JDBC");
             conn = DriverManager.getConnection("jdbc:sqlite:SqliteDB.db");
@@ -70,8 +68,8 @@ public class Database {
     }
 
     public static Boolean checkDatabase() {
-        DatabaseMetaData md = null;
-        Boolean check = false;
+        DatabaseMetaData md;
+        boolean check = false;
         try {
              md = conn.getMetaData();
             ResultSet rs = md.getTables(null, null, "Tasks", null);
@@ -87,12 +85,11 @@ public class Database {
 
     public static void submitQuery(String query) {
         Statement stmt;
-        ResultSet result;
         try {
             stmt = conn.createStatement();
 
             if (query.toLowerCase().startsWith("select")) {
-                result = stmt.executeQuery(query);
+                stmt.executeQuery(query);
             } else if (query.toLowerCase().startsWith("delete") || query.toLowerCase().startsWith("insert") || query.toLowerCase().startsWith("update")) {
                 stmt.executeUpdate(query);
             }
