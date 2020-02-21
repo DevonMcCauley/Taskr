@@ -1,17 +1,20 @@
 package controller;
 
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.*;
+import javafx.scene.control.CheckBox;
+import javafx.scene.control.DateCell;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.TextField;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
+import javafx.util.Callback;
 import javafx.util.Duration;
 import java.net.URL;
 import java.time.LocalDate;
 import java.util.ResourceBundle;
+
 import static utilities.Database.submitQuery;
 
 public class AddTaskController implements Initializable {
@@ -68,6 +71,26 @@ public class AddTaskController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+
+        final Callback<DatePicker, DateCell> dayCellFactory = new Callback<DatePicker, DateCell>() {
+            public DateCell call(final DatePicker datePicker) {
+                return new DateCell() {
+                    @Override public void updateItem(LocalDate day, boolean empty) {
+                        super.updateItem(day, empty);
+
+                        if (day.isBefore(LocalDate.now())) {
+                            setStyle("-fx-background-color: #ff6f69;");
+                            setDisable(true);
+                        }
+                        if(day.equals(LocalDate.now()) || day.isAfter(LocalDate.now()))
+                        {
+                            setStyle("-fx-background-color: #96ceb4;");
+                        }
+                    }
+                };
+            }
+        };
+        calTaskDate.setDayCellFactory(dayCellFactory);
 
         //Creates a listener on the chkNoEndDate checkbox & disables the calendar widget if checked
         chkNoEndDate.selectedProperty().addListener((observable, oldValue, newValue) -> {

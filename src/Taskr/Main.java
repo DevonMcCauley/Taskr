@@ -13,7 +13,7 @@ import java.io.IOException;
 public class Main extends Application {
 
     static Stage stage;
-    public static Image ic = new Image(("/images/icon.png"));
+    public static Image ic = new Image(("/images/logo_icon.png"));
 
     @Override
     public void start(Stage stage) {
