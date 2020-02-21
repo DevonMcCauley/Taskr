@@ -5,6 +5,7 @@
 
 * {
     -fx-font-family: Comfortaa Regular;
+    -fx-font-smoothing-type: gray;
 }
 
 .button {

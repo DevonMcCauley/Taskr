@@ -2,29 +2,28 @@ package controller;
 
 import Taskr.Main;
 import javafx.beans.property.ReadOnlyStringWrapper;
-import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
-import javafx.scene.control.cell.TextFieldListCell;
 import javafx.scene.layout.AnchorPane;
-import javafx.util.Callback;
-import javafx.util.StringConverter;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+import javafx.util.Duration;
 import model.Task;
 import utilities.Database;
-
 import java.net.URL;
 import java.sql.ResultSet;
 import java.util.Optional;
 import java.util.ResourceBundle;
-
 import static utilities.Database.submitQuery;
 
 
 public class TaskScreenController implements Initializable {
+
+    //<editor-fold desc="FXML Declarations">
     @FXML
     private AnchorPane root;
 
@@ -39,10 +38,26 @@ public class TaskScreenController implements Initializable {
 
     @FXML
     private TableColumn<Task, String> colTaskDescription;
+    //</editor-fold>
+
+    //<editor-fold desc="Sounds">
+    String clickSound = getClass().getResource("/sounds/click.mp3").toExternalForm();
+    String deleteSound = getClass().getResource("/sounds/deleted.mp3").toExternalForm();
+
+    Media click = new Media(clickSound);
+    MediaPlayer buttonClicked = new MediaPlayer(click);
+
+    Media delete = new Media(deleteSound);
+    MediaPlayer deleteClicked = new MediaPlayer(delete);
+    //</editor-fold>
+
 
     @FXML
     void AddTask(ActionEvent event) {
         try {
+            buttonClicked.seek(Duration.ZERO);
+            buttonClicked.play();
+            Thread.sleep(400);
             String screen = "/view/add_task.fxml";
             String title = "Add Task";
             Taskr.Main.changeScene(screen, title);
@@ -58,6 +73,7 @@ public class TaskScreenController implements Initializable {
 
         Task task = tblTasks.getSelectionModel().getSelectedItem();
 
+        //Checks that user selects a task to delete
         if (task == null) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Invalid Selection");
@@ -66,6 +82,7 @@ public class TaskScreenController implements Initializable {
             alert.initOwner(Main.getStage());
             alert.showAndWait();
 
+            //Deletes the task from the database
         } else {
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
             alert.setTitle("Confirm Delete");
@@ -78,6 +95,8 @@ public class TaskScreenController implements Initializable {
                     sqlStatement = "DELETE FROM Tasks WHERE task_id = " + task.getTask_id().getValue() + ";";
                     submitQuery(sqlStatement);
                     callDatabase();
+                    deleteClicked.seek(Duration.ZERO);
+                    deleteClicked.play();
                 } catch (Exception e) {
                     System.out.println("Error: " + e.getMessage());
                 }
@@ -85,6 +104,7 @@ public class TaskScreenController implements Initializable {
             }
         }
     }
+
 
     private void callDatabase() {
         ObservableList<Task> taskList = FXCollections.observableArrayList();
