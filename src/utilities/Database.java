@@ -10,7 +10,6 @@ public class Database {
 
     public static void startConnection() {
         try {
-            Class.forName("org.sqlite.JDBC");
             conn = DriverManager.getConnection("jdbc:sqlite:SqliteDB.db");
         } catch (Exception e) {
             e.printStackTrace();
@@ -29,7 +28,6 @@ public class Database {
         Connection conn;
         Statement stmt;
         try {
-            Class.forName("org.sqlite.JDBC");
             conn = DriverManager.getConnection("jdbc:sqlite:SqliteDB.db");
             stmt = conn.createStatement();
             String sql = "CREATE TABLE Tasks " + "(task_id INTEGER PRIMARY KEY AUTOINCREMENT,  task_description TEXT NOT NULL,  task_date DATE)";

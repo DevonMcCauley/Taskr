@@ -4,11 +4,6 @@
 # Log file
 *.log
 
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
 
 # User-specific stuff
 .idea/**/workspace.xml
@@ -57,6 +52,7 @@ cmake-build-*/
 # IntelliJ
 out/
 
+
 # mpeltonen/sbt-idea plugin
 .idea_modules/
 
@@ -88,3 +84,5 @@ SqliteDB.db
 .idea/dataSources.xml
 .idea/dataSources.local.xml
 SqliteDB.db
+!/SqliteDB.db
+!/.idea/
