@@ -8,6 +8,8 @@ import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.util.Callback;
 import javafx.util.Duration;
+import utilities.ScreenManager;
+
 import java.net.URL;
 import java.time.LocalDate;
 import java.util.ResourceBundle;
@@ -47,7 +49,7 @@ public class AddTaskController implements Initializable {
     void Cancel(ActionEvent event) {
         backClicked.seek(Duration.ZERO);
         backClicked.play();
-        Taskr.Main.changeScene(screen, title);
+        ScreenManager.changeScene(screen, title);
     }
 
     //Submits Task entered by user to the SQLite database
@@ -64,7 +66,7 @@ public class AddTaskController implements Initializable {
             submitQuery(sqlStatement);
             taskAdded.seek(Duration.ZERO);
             taskAdded.play();
-            Taskr.Main.changeScene(screen, title);
+            ScreenManager.changeScene(screen, title);
         }
     }
 

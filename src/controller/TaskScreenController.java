@@ -11,9 +11,12 @@ import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
+import javafx.stage.Screen;
 import javafx.util.Duration;
 import model.Task;
 import utilities.Database;
+import utilities.ScreenManager;
+
 import java.net.URL;
 import java.sql.ResultSet;
 import java.util.Optional;
@@ -65,7 +68,7 @@ public class TaskScreenController implements Initializable {
             Thread.sleep(400);
             String screen = "/view/add_task.fxml";
             String title = "Add Task";
-            Taskr.Main.changeScene(screen, title);
+            ScreenManager.changeScene(screen, title);
 
         } catch (Exception e) {
             e.printStackTrace();

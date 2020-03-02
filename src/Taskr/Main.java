@@ -40,22 +40,6 @@ public class Main extends Application {
         return stage;
     }
 
-    //Method to change the scene
-    public static void changeScene(String screen, String title) {
-        Parent main = null;
-        try {
-            main = FXMLLoader.load(Main.class.getResource(screen));
-            Scene scene = new Scene(main);
-            Stage stage = Main.getStage();
-            stage.setScene(scene);
-            stage.getIcons().add(ic);
-            stage.setTitle(title);
-            stage.setResizable(false);
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 
     public static void main(String args[]) {
         Database.startConnection();
